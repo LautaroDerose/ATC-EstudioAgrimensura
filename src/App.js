@@ -7,7 +7,6 @@ import About from './components/About';
 import Servicios from './components/Servicios';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import EstadosParcelarios from './components/EstadosParcelarios';
 
 
 function App() {
@@ -16,10 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Body />} />
-        <Route path='/#servicios' element={<Servicios />}/>
-        {/* <Route path='mensura' element={<Mensura />} /> */}
-        {/* <Route path='propiedad-horizontal' element={<PropiedadHorizontal />} /> */}
-        <Route path='estados-parcelarios' element={<EstadosParcelarios />} />
+
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -61,12 +61,12 @@ const Hero = () => {
           <img src="Logo_Vertical.png" alt="" className='md:w-[200px] w-[100px]' />
         </div>
         
-        <div className="lg:w-[60%] flex flex-col items-centerr z-0 gap-8 px-4">
+        <div className="lg:w-[60%] w-screen flex flex-col items-center z-0 gap-8 px-4">
           <div className='flex flex-col gap-4'>
             <h1 className=' md:text-3xl sm:text-3xl text-2xl font-bold py-2  ' >Soluciones Topograficas </h1>
             <h2 className=' md:text-lg sm:text-2xl text-xl font-medium py-0  ' >Realizamos trabajos de Agrimensura,<br/> topografia y cartografia, para saver mas </h2>
           </div>
-          <div className='flex gap-8'>
+          <div className='flex w-[80%] gap-8 justify-around '>
             <div className=' flex justify-center items-center btn-hero bg-[#019EDD] w-[10rem] h-[3rem] '>
             {/* <div className=' flex justify-center items-center btn-hero bg-[#019EDD] rounded-full w-[10rem] h-[3rem] '> */}
               <a  href='#contacto' className=' icon text-white font-semibold '>Pedir Cotizacion</a> 

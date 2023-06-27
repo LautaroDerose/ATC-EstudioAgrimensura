@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
         // <div className={`fixed w-[100%] z-10 top-0 flex justify-between items-center h-16 mx-auto md:px-[2rem] lg:px-[15%] ${scrolled ? '  bg-[#032433] h-[10vh] z-50 duration-300' :' pt-10'} `}>  
-        <div className=' fixed w-full bg-black z-10 top-0  flex justify-between items-center h-16  mx-auto px-4 md:px-[2rem] lg:px-[15%] text-white'> 
+        <div className=' fixed w-screen bg-black z-10 top-0  flex justify-between items-center h-16  mx-auto px-4 md:px-[2rem] lg:px-[15%] text-white'> 
 
                 
           <div className=''> <img src={`${scrolled ? "logoIcon_Wcolor_transparent.png" : "logoIcon_white_transparent.png" }`} alt="" className='w-[4rem] duration-300' /></div>
