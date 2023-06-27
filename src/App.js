@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Body from './components/Body';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Servicios from './components/Servicios';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import EstadosParcelarios from './components/EstadosParcelarios';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Body />} />
+        <Route path='/#servicios' element={<Servicios />}/>
+        {/* <Route path='mensura' element={<Mensura />} /> */}
+        {/* <Route path='propiedad-horizontal' element={<PropiedadHorizontal />} /> */}
+        <Route path='estados-parcelarios' element={<EstadosParcelarios />} />
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
