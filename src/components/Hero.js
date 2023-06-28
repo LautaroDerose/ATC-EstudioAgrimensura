@@ -49,40 +49,38 @@ import '../App.css';
 
 // dise;o centro y limpio
 
-
+//ultimo reelase
 const Hero = () => {
   return (
-    <div className=' bg-slate-200 flex flex-col items-center justify-center  h-[80vh] '>
-    {/* <div className='h-screen bg-slate-200 flex flex-col items-center ' style={{backgroundImage:'url(back_001.jpg)', backgroundSize:'cover'}}> */}
-      <div className=" md:flex md:items-center md:justify-between mx-auto md:px-[3%] lg:px-[6.5%] xl:px-[15%]  m-[2rem] pt-[4rem] ">
-      {/* <div className=" h-[70%] w-[80%] flex items-center justify-evenly m-[4rem] pt-[4rem]  "> */}
+    <div className=' bg-slate-200 flex flex-col w-screen justify-center  py-14'>
+      <div className=" md:flex md:items-center gap-8 mx-auto px-[6.5%] pt-[4rem] ">
 
-        <div className='lg:w-[40%] flex items-center justify-center m-4 p-4 '>
-          <img src="Logo_Vertical.png" alt="" className='md:w-[200px] w-[100px]' />
+        <div className=' flex items-center justify-center m-4 p-4 '>
+          <img src="Logo_Vertical.png" alt="" className='md:w-[200px]  w-[100px]' />
         </div>
         
-        <div className="lg:w-[60%] w-screen flex flex-col items-center z-0 gap-8 px-4">
-          <div className='flex flex-col items-center gap-4'>
-            <h1 className=' md:text-3xl sm:text-3xl text-2xl font-bold py-2  ' >Soluciones Topograficas </h1>
-            <h2 className=' md:text-lg sm:text-2xl text-xl  font-medium py-0  ' >Realizamos trabajos de Agrimensura,<br/> topografia y cartografia, para saver mas </h2>
+        <div className="lg:w-[60%]  flex flex-col z-0 gap-8 ">
+          <div className='flex flex-col '>
+            <h1 className='  text-2xl font-bold py-2 mb-2 ' >Soluciones Topograficas </h1>
+            <h2 className='  text-md font-medium py-0  ' >Realizamos trabajos de Agrimensura,<br/> topografia y cartografia, para saver mas </h2>
           </div>
-          <div className='flex  gap-6  '>
-            <div className=' flex justify-center items-center btn-hero bg-[#019EDD] p-4  h-[3rem]  '>
-            {/* <div className=' flex justify-center items-center btn-hero bg-[#019EDD] rounded-full w-[10rem] h-[3rem] '> */}
+          <div className='flex w-full gap-8'>
+            <div className=' flex items-center justify-center btn-hero bg-[#019EDD] p-4 h-[3rem]  '>
               <a  href='#contacto' className=' icon  text-white font-semibold '>Pedir Cotizacion</a> 
             </div>
-            {/* <button className='border-2 border-[#019EDD] p-4 w-[10rem] h-[3rem] rounded-full flex items-center justify-center text-[#019EDD] font-semibold text-lg'>Ver servicio</button> */}
             <button className=' border-2 border-[#019EDD] p-4 h-[3rem] flex items-center justify-center text-[#019EDD] font-semibold  '>Ver servicio</button>
           </div>
         </div>
 
       </div>
-      {/* <div className=' h-[20vh] flex items-center justify-center'><BsArrowDownCircle className='text-[4rem] text-sky-500'/></div> */}
     </div>
   )
 }
-
 export default Hero
+
+
+
+
 
 // import React from 'react'
 // import { BsArrowDownCircle, BsInstagram } from 'react-icons/bs'

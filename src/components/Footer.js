@@ -4,7 +4,7 @@ import { HiMail } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
   return (
-    <div className='lg:h-[70vh] w-screen bg-sky-950 flex flex-col'>
+    <div className='lg:h-[80vh] w-screen bg-sky-950 flex flex-col'>
       
       <div className='md:p-0 p-8'>
         <Contact />
@@ -52,7 +52,7 @@ const Footer = () => {
     <div className="w-[80%] gap-4 justify-center mt-4 mx-auto mb-8 lg:mb-0">
       <div className="max-w-[1240px] gap-8 mt-6 lg:flex-row flex flex-col lg:items-start items-center">
         <div className="md:w-1/2">
-          <img src="/logo2.png" alt="ATC | Agrimensura" className=""/>
+          <img src="/logo2.png" alt="ATC | Agrimensura" className="lg:px-8"/>
         </div>
         <div className="md:w-1/2 lg:flex lg:flex-row flex-col">
           <div className='lg:flex lg:gap-12 '>
