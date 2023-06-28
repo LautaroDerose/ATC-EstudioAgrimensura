@@ -52,7 +52,7 @@ const Footer = () => {
     <div className="w-[80%] gap-4 justify-center mt-4 mx-auto mb-8 lg:mb-0">
       <div className="max-w-[1240px] gap-8 mt-6 lg:flex-row flex flex-col lg:items-start items-center">
         <div className="md:w-1/2">
-          <img src="/Logo2.png" alt="ATC | Agrimensura" className=""/>
+          <img src="/logo2.png" alt="ATC | Agrimensura" className=""/>
         </div>
         <div className="md:w-1/2 lg:flex lg:flex-row flex-col">
           <div className='lg:flex lg:gap-12 '>
