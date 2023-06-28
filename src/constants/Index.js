@@ -54,10 +54,10 @@ export const navLinks = [
         label:"Contacto",
         toLink:"/#contacto"
     },
-    {
-        id:5,
-        label:"Consultas Frecuentes",
-        toLink:"/#faq"
-    },
+    // {
+    //     id:5,
+    //     label:"Consultas Frecuentes",
+    //     toLink:"/#faq"
+    // },
    
   ]

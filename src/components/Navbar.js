@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 import {navLinks} from '../constants/Index'
 
 
@@ -56,21 +55,15 @@ const Navbar = () => {
             <div className='p-4 uppercase '>    
                 {
                     navLinks.map((item)=> (
-                        <div className={nav ? 'p-4 text-gray-400 hover:text-emerald-500 border-b border-gray-600': 'hidden'}>
-                            {/* <a
-                            className='focus:outline-none focus:text-emerald-500'
+                        <div className={nav ? 'p-4 text-gray-400 hover:text-[#019EDD] border-b border-gray-600': 'hidden'}>
+                        <a
+                            className='focus:outline-none focus:text-[#019EDD]'
                             href={item.toLink}
                             key={item.id}
                         >
                             {item.label}
-                        </a>    */}
-                        <Link
-                            className='focus:outline-none focus:text-emerald-500'
-                            to={item.toLink}
-                            key={item.id}
-                        >
-                            {item.label}
-                        </Link>
+                        </a>   
+                
                         </div>
                     ))
                 }
