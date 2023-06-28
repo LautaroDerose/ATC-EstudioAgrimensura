@@ -42,6 +42,8 @@
 
 // export default Modal;
 
+
+
 import React, { useEffect } from "react";
 
 const Modal = ({ isOpen, onClose, children }) => {
@@ -57,13 +59,23 @@ const Modal = ({ isOpen, onClose, children }) => {
     return null;
   }
 
+  const handleModalScroll = (e) => {
+    e.stopPropagation();
+  };
+
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto">
       <div className="fixed inset-0 bg-black opacity-50" onClick={onClose}></div>
-      <div className="relative w-11/12 md:w-3/4 lg:w-1/2 xl:w-1/3 max-h-90vh mx-auto p-8 bg-white rounded shadow-lg">
-        {children}
+      <div
+        className="relative w-full max-w-lg mx-auto p-4 md:p-8 bg-white rounded shadow-lg"
+        onScroll={handleModalScroll}
+      >
+        {/* <h1 className="font-bold text-[#019EDD] py-2 md:py-4">{title}</h1> */}
+        <div className="overflow-y-auto max-h-[calc(100vh-8rem)]">
+          {children}
+        </div>
         <button
-          className="absolute top-4 right-4 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded"
+          className="absolute top-2 right-2 md:top-4 md:right-4 px-3 md:px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded"
           onClick={onClose}
         >
           Cerrar

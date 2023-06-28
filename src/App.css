@@ -88,6 +88,16 @@
   }
 }
 
+
+/* .buttonPrueba:hover,
+.buttonPrueba:focus{
+  outline-offset: 3px;
+} */
+/* 
+.buttonPrueba:is(:hover, :focus){
+outline-offset:3px;
+} */
+
 /* .modal {
   position: fixed;
   top: 0;
