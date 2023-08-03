@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Carousel from './Carousel';
 import Slider from './Slider';
 import Hero from './Hero';
+import Services from './Services';
 
 const services = [
   {
@@ -49,6 +50,8 @@ const Body = () => {
         </div>
         <div id='servicios' >
           <Servicios />
+          <h2 className='flex items-center justify-center text-3xl font-extrabold mx-4 mb-4'>Tambien brindamos los siguientes servicios</h2>
+          <Services />
         </div>
         {/* <div id='galeria'  className=' mx-auto'>
           <Slider  />

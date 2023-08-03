@@ -60,25 +60,24 @@ const SliderCard = ({ id, imgUrl, title, index, active, handleClick, description
             </h2>
             {isVisible && (
               <>
-                <TitleText title={<>
+                <TitleText 
+                  title={<>
                   <p className="font-semibold text-sm text-white">{description}</p>
-                  <button onClick={handleOpenModal} className=" flex mt-4 text-[1rem] text-[#019EDD] underline"> Leer mas</button>
-                </>}  />
-                {/* <TypingText title={<Link>Leer mas</Link>} textStyles="text-center" /> */}
-                
+                  {/* <button onClick={handleOpenModal} className=" flex mt-4 text-[1rem] text-[#019EDD] underline"> Leer mas</button> */}
+                  </>}  
+                />        
               </>
             )}
           </div>
         )}
       </motion.div>
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+      {/* <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
       <div  >
-        {/* <img src={imgUrl} alt="" /> */}
         <h1 className="font-bold text-[#019EDD] py-4">{title}</h1>
         <p>{description}</p>
         <p className="text-sm md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, ratione dolorum. Et dolores similique architecto culpa, fugit magnam, omnis incidunt optio voluptate fugiat vitae repudiandae illo expedita dolorum, repellat quos numquam? Aliquid deleniti quaerat, consectetur laudantium architecto nobis dicta quos ipsum. Voluptates corporis reiciendis debitis maiores veniam labore praesentium ab commodi neque, autem perferendis vel molestias quae impedit tenetur totam. Reiciendis eaque quidem quas aspernatur quos itaque amet dolore fugit dicta nesciunt aut magnam, suscipit nemo praesentium, iure porro labore quaerat laboriosam tempore ut provident magni ullam, iusto nulla. Ea a qui, magni suscipit nihil sunt asperiores porro minima tempora ad rem architecto natus obcaecati, ipsum fugiat quam temporibus illum, corrupti quia soluta accusantium hic debitis molestiae. Sunt sint alias animi aut laborum omnis ab nemo ducimus ipsum voluptatum, nesciunt vel repudiandae. Dignissimos, pariatur eligendi quod est illum aperiam repellat corporis? Cumque, ducimus rerum. Est cupiditate totam ut velit, repellat quod adipisci dicta consequatur illum debitis voluptas numquam, hic odit molestiae similique veritatis ullam quam mollitia, quos eligendi voluptates officiis. Voluptate optio laboriosam temporibus nam quo ad iusto animi, repudiandae incidunt a sunt rerum, labore deleniti reprehenderit. Dolor libero quod cum, minima accusamus id impedit doloremque blanditiis quisquam. Mollitia, corrupti!</p>
       </div>
-    </Modal>
+    </Modal> */}
     </>
   );
 };

@@ -8,7 +8,7 @@ import styles from '../styles/index';
 import { staggerContainer } from '../utils/motion'
 import  SliderCard  from "./SliderCard";
 import {TitleText, TypingText } from "./CustomText";
-import {servicesLinks} from '../constants/Index'
+import {moreServices} from '../constants/Index'
 
 const Servicios = () => {
   const [active, setActive] = useState('service-2')
@@ -24,12 +24,12 @@ const Servicios = () => {
       >
         {/* <TypingText title="Servicios" textStyles="text-center" /> */}
       <div className='flex items-center justify-center'>
-        <TitleText title={<>Ofrecemos estos servicios </>} /> 
+        <TitleText title={<>Nuestros servicios principales</>} /> 
       </div>
          {/* <TitleText title={<>Ofrecemos estos servicios <br className="md:block hidden"/> vea en detalle </>} textStyles="text-center" />  */}
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {
-            servicesLinks.map((world, index) => (
+            moreServices.slice(0, 3).map((world, index) => (
               <SliderCard 
                 key={world.id}
                 {...world}

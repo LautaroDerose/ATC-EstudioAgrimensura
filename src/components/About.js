@@ -12,21 +12,21 @@ const About = () => {
         
         <div className='p-4 mx-4 flex flex-col items-center justify-center'>
           <div className='w-[70%] mx-auto m-4 '><img src="logo1.png" alt="" /></div>
-          <div><p className='text-sm m-4 text-center mx-auto '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia distinctio delectus repudiandae dignissimos corporis animi maiores beatae laborum, placeat voluptatem dolores nulla eius tempore deleniti blanditiis provident dolorem quidem iusto rerum, deserunt neque. Molestiae voluptatem repudiandae blanditiis non.</p></div>
+          <div><p className='text-sm m-4 text-center mx-auto '>ATC es un estudio de agrimensura y topografía que presta servicios tanto en la Ciudad Autónoma de Buenos Aires como en la Provincia de Buenos Aires, creado por joven profesional formado en la Universidad Nacional de La Plata y con experiencia en el desarrollo de la actividad profesional en forma independiente durante el transcurso de sus estudios.</p></div>
         </div>
 
         <div className='bg-sky-200 p-8 flex flex-col justify-center gap-8 '>
           <div>
             <h1 className='text-xl font-bold text-center border-b-2 border-sky-800 mb-2 py-2 '>Calidad</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque distinctio eligendi doloribus voluptates maxime laboriosam quo, commodi, quidem eum suscipit temporibus error sequi odit molestias molestiae doloremque tempora saepe dolores.</p>
+            <p>Contamos con instrumental de medición de última generación que nos permite generar productos que cumplen con los estándares de precisión actuales, optimizando tiempos y asegurando la calidad del trabajo.</p>
           </div>
           <div>
             <h1 className='text-xl font-bold text-center border-b-2 border-sky-800 mb-2 py-2 '>Compromiso</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque distinctio eligendi doloribus voluptates maxime laboriosam quo, commodi, quidem eum suscipit temporibus error sequi odit molestias molestiae doloremque tempora saepe dolores.</p>
+            <p>Estamos comprometidos en la búsqueda de la solución más apta según las necesidades del cliente, velando por sus intereses económicos y ofreciéndole asesoramiento a través de una comunicación directa, personal y eficiente.</p>
           </div>
           <div>
             <h1 className='text-xl font-bold text-center border-b-2 border-sky-800 mb-2 py-2 '>Seguridad</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque distinctio eligendi doloribus voluptates maxime laboriosam quo, commodi, quidem eum suscipit temporibus error sequi odit molestias molestiae doloremque tempora saepe dolores.</p>
+            <p>Teniendo en cuenta que nuestros servicios pueden llegar a tener consecuencias legales o financieras significativas, realizamos una verificación y control de calidad antes de la entrega de los resultados finales, de manera de garantizar su exactitud y coherencia, brindando seguridad al cliente.</p>
           </div>
         </div>
 
