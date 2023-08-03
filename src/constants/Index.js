@@ -23,7 +23,7 @@ export const moreServices = [
   },
   {
       id:'service-4',
-      title:"Declaraciones Juradas de Avalúo (Prov. de Bs. As.)",
+      title:"Declaraciones Juradas de Avalúo \n(Prov. de Bs. As.)",
       toLink:"declaraciones-juradas",
       imgUrl: '/sliderImage_3.jpg',
       description:"Los propietarios, poseedores o responsables de los inmuebles deben denunciar cualquier modificación realizada en su propiedad mediante una declaración jurada de avalúo, en la que se determinan las ampliaciones, demoliciones o reciclados realizados.", 

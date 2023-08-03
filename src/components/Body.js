@@ -1,40 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import React from 'react'
 import About from './About';
-import Servicios from './Servicios';
-import Contact from './Contact';
-import Carousel from './Carousel';
-import Slider from './Slider';
 import Hero from './Hero';
 import Services from './Services';
-
-const services = [
-  {
-      id:1,
-      label:"Estado Parcelario",
-      description:"De acuerdo a la Nueva Ley de la Ciudad de Buenos Aires, Ley 6.347",
-      toLink:"/"
-  },
-  {
-      id:2,
-      label:"Mensura Particular y División en propiedad Horizontal",
-      description:"Relevamiento, confección de planos y gestión de acuerdo al Código Civil, artículo 2037, para toda parcela construida, en construcción o a construir, con permiso de obra debidamente otorgado por el órgano competente",
-      toLink:"/nuestro-equipo"
-  },
-  {
-      id:3,
-      label:"Mensura",
-      description:"De acuerdo a la Ley de Catastro 6.437 de la Ciudad de Buenos Aires.      Relevamiento, confección de planos de acuerdo a Reglamentos Técnicos vigentes, gestión y registro de planos de mensuras particulares de predios urbanos",
-      toLink:"/servicios"
-  },
-  {
-      id:4,
-      label:"Prescripción Adquisitiva",
-      description:"Relevamiento y confección de plano de acuerdo a Reglamentos Técnicos vigentes a fin de determinar el polígono en posesión que se pretende prescribir y ser publicitado en el certificado previsto en la ley",
-      toLink:"/contacto"
-  },
-]
-
 
 
 const Body = () => {
@@ -49,8 +16,6 @@ const Body = () => {
           <About/>
         </div>
         <div id='servicios' >
-          <Servicios />
-          <h2 className='flex items-center justify-center text-3xl font-extrabold mx-4 mb-4'>Tambien brindamos los siguientes servicios</h2>
           <Services />
         </div>
         {/* <div id='galeria'  className=' mx-auto'>

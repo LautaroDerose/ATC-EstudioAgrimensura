@@ -67,12 +67,15 @@ const Footer = () => {
             </div>
             <div className="lg:w-1/2 mx-auto mt-6 lg:mt-0">
               <h3 className="text-[#019EDD] font-bold">Clientes</h3>
-              <ul>
+              {/* <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6762.236327783282!2d-58.430685013244386!3d-34.58229963253038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5856aae7333%3A0x7eb0c470594d77f8!2sParaguay%204831%2C%20C1425BSU%20CABA!5e0!3m2!1ses!2sar!4v1691095019655!5m2!1ses!2sar" width="600" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div> */}
+              {/* <ul>
                 <li><a href="/" className="text-[#cccccc]">Ejemplo-1</a></li>
                 <li><a href="/" className="text-[#cccccc]">Ejemplo-2</a></li>
                 <li><a href="/" className="text-[#cccccc]">Ejemplo-3</a></li>
                 <li><a href="/" className="text-[#cccccc]">Ejemplo-4</a></li>          
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
@@ -83,7 +86,7 @@ const Footer = () => {
               <span className="justify-center block text-base mb-2 text-palette1">
                 <HiMail className="flex justify-center items-center text-3xl text-[#cccccc]"/>
               </span>
-              <span href="#" className="justify-center block text-base mb-2 text-[#cccccc] font-bold">lautiderose@gmail.com</span>
+              <span href="#" className="justify-center block text-base mb-2 text-[#cccccc] font-bold">atcagrimensura@gmail.com</span>
             </div>
             <div className="flex gap-2">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/antonio-fernar/" className="justify-center block md:text-base text-xs mb-2 text-[#cccccc]">

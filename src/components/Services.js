@@ -1,26 +1,100 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { moreServices } from '../constants/Index'
 
-const Services = (id, title, toLink, imgUrl, description) => {
+// const Services = (id, title, toLink, imgUrl, description) => {
+//   return (
+//     <section className=' max-w-[1240px] mx-auto my-8'>
+//       <div className='flex flex-wrap justify-between gap-3 '>
+//         {
+//           moreServices.map((item) => (
+//             <div className=' md:w-[45%] p-3 mx-2 shadow-md  '>
+//               <h2 className='font-extrabold text-2xl text-slate-800 border-b-2 border-[#019EDD] mb-2 py-2 uppercase '>{item.title}</h2>
+//               {/* <img src={item.imgUrl} alt="" /> */}
+//               <p className='font-medium text-lg text-slate-600'>{item.description}</p>
+//             </div>
+//           ))
+//         }
+//       </div>
+//     </section>
+//   )
+// }
+
+// export default Services
+
+
+const Services = () => {
+  // State to manage the visibility of descriptions
+  const [showDescriptions, setShowDescriptions] = useState({});
+
+  // Function to handle the click event and toggle description visibility
+  const handleDescriptionClick = (itemId) => {
+    setShowDescriptions((prevState) => ({
+      ...prevState,
+      [itemId]: !prevState[itemId],
+    }));
+  };
+
   return (
-    <section className=' max-w-[1240px] mx-auto'>
-      <div className='flex flex-wrap  '>
-        {
-          moreServices.slice(3).map((item) => (
-            <div className='lg:w-[30%] md:w-[45%] p-3 mx-2'>
-              <h2 className='font-bold text-[16px] text-[#019EDD] mb-4  '>{item.title}</h2>
-              {/* <img src={item.imgUrl} alt="" /> */}
-              <p className='font-base text-sm '>{item.description}</p>
-            </div>
-          ))
-        }
+    <section className='max-w-[1240px] mx-auto my-8'>
+      <div className='grid grid-cols-2'>
+        {/* Column 1 */}
+        <div>
+          {
+            moreServices.map(
+              (item, index) =>
+                index % 2 === 0 && ( // Display items with even indices in the first column
+                  <div className='p-3 mx-2 shadow-md' key={item.id}>
+                    <h2
+                      className='font-extrabold text-[18px] text-slate-800 border-b-2 border-[#019EDD] mb-2 py-2 uppercase cursor-pointer'
+                      onClick={() => handleDescriptionClick(item.id)}
+                    >
+                      {item.title}
+                    </h2>
+                    <div
+                      className='description-container'
+                      style={{
+                        display: showDescriptions[item.id] ? 'block' : 'none',
+                      }}
+                    >
+                      <p className='font-medium text-lg text-slate-600'>{item.description}</p>
+                    </div>
+                  </div>
+                )
+            )
+          }
+        </div>
+        {/* Column 2 Que tipo de diseno UI le puedo asignar a estos elementos, para que el usuario interprete que si hace click */}
+        <div>
+          {
+            moreServices.map(
+              (item, index) =>
+                index % 2 === 1 && ( // Display items with odd indices in the second column
+                  <div className='p-3 mx-2 shadow-md' key={item.id}>
+                    <h2
+                      className='font-extrabold text-[18px] text-slate-800 border-b-2 border-[#019EDD] mb-2 py-2 uppercase cursor-pointer'
+                      onClick={() => handleDescriptionClick(item.id)}
+                    >
+                      {item.title}
+                    </h2>
+                    <div
+                      className='description-container'
+                      style={{
+                        display: showDescriptions[item.id] ? 'block' : 'none',
+                      }}
+                    >
+                      <p className='font-medium text-lg text-slate-600'>{item.description}</p>
+                    </div>
+                  </div>
+                )
+            )
+          }
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
-
+export default Services;
 
 
 // import { TitleText, TypingText } from "./CustomText";
