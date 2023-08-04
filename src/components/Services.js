@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <section className='max-w-[1240px] mx-auto my-8'>
       <h1 className=' w-[40%] font-extrabold text-3xl text-[#019EDD] flex justify-center py-4 mb-4 mx-auto border-b-4 border-[#019EDD] ' >Servicios de Agrimensura</h1>
-      <div className='grid grid-cols-2'>
+      <div className='grid md:grid-cols-2'>
         {/* Column 1 */}
         <div>
           {
