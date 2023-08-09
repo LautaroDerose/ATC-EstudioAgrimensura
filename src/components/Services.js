@@ -36,7 +36,7 @@ const Services = () => {
 
   return (
     <section className='max-w-[1240px] mx-auto my-8'>
-      <h1 className=' w-[40%] font-extrabold text-3xl text-[#019EDD] flex justify-center py-4 mb-4 mx-auto border-b-4 border-[#019EDD] ' >Servicios de Agrimensura</h1>
+      <h1 className=' lg:w-[40%] font-extrabold md:text-3xl text-2xl text-[#019EDD] flex justify-center py-4 mb-4 mx-auto border-b-4 border-[#019EDD] ' >Servicios de Agrimensura</h1>
       <div className='grid md:grid-cols-2'>
         {/* Column 1 */}
         <div>
@@ -72,7 +72,7 @@ const Services = () => {
                 index % 2 === 1 && ( // Display items with odd indices in the second column
                   <div className='p-3 mx-2 shadow-md' key={item.id}>
                     <h2
-                      className='font-extrabold text-[18px] text-slate-800 border-b-2 border-[#019EDD] mb-2 py-2 uppercase cursor-pointer'
+                      className='font-extrabold text-[18px] text-slate-800 hover:text-[#019EDD] border-b-2 border-[#019EDD] mb-2 py-2 uppercase cursor-pointer'
                       onClick={() => handleDescriptionClick(item.id)}
                     >
                       {item.title}

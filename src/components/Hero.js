@@ -62,7 +62,7 @@ const Hero = () => {
         <div className="lg:w-[60%]  flex flex-col z-0 gap-8 ">
           <div className='flex flex-col '>
             <h1 className='  text-2xl font-bold py-2 mb-2 ' >Soluciones Topograficas </h1>
-            <h2 className='  text-md font-medium py-0  ' >Realizamos trabajos de Agrimensura,<br/> topografia y cartografia, para saver mas </h2>
+            <h2 className='  text-md font-medium py-0  ' >Realizamos trabajos de Agrimensura,<br/> topografia y cartografia, para saber mas </h2>
           </div>
           <div className='flex w-full gap-8'>
             <div className=' flex items-center justify-center btn-hero bg-[#019EDD] p-4 h-[3rem]  '>
