@@ -6,13 +6,17 @@ import { TitleText } from './CustomText'
 const About = () => {
   return (
     
-      <div>
-        <div className='flex items-center justify-center my-4'><TitleText title={<>Sobre nosotros</>} textStyles="text-center" /></div>
+      <div className='pt-16'>
+        {/* <div className='flex items-center top-10 justify-center my-4'><TitleText title={<>Sobre nosotros</>} textStyles="text-center" /></div> */}
+        <h1 className=' lg:w-[40%] font-extrabold md:text-3xl text-2xl text-[#019EDD] flex justify-center py-4 mb-4 mx-auto border-b-4 border-[#019EDD] ' >Sobre nosotros</h1>
+
         <div className=' grid lg:grid-cols-2 bg-slate-100 h-[60%] max-w-[1240px] m-auto drop-shadow-lg shadow-lg'>
         
         <div className='p-4 mx-4 flex flex-col items-center justify-center'>
           <div className='w-[70%] mx-auto m-4 '><img src="logo1.png" alt="" /></div>
           <div><p className='text-sm m-4 text-center mx-auto '>ATC es un estudio de agrimensura y topografía que presta servicios tanto en la Ciudad Autónoma de Buenos Aires como en la Provincia de Buenos Aires, creado por joven profesional formado en la Universidad Nacional de La Plata y con experiencia en el desarrollo de la actividad profesional en forma independiente durante el transcurso de sus estudios.</p></div>
+          <div>Antonio Fernndez Arias</div>
+          <h3>Ing. Agrimensor</h3>
         </div>
 
         <div className='bg-sky-200 p-8 flex flex-col justify-center gap-8 '>

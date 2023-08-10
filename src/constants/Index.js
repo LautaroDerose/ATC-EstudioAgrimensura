@@ -98,7 +98,7 @@ export const navLinks = [
     },
     {
         id:2,
-        label:"servicios",
+        label:"Servicios",
         toLink:"/#servicios"
     },
     {

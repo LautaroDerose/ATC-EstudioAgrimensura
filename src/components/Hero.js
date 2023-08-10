@@ -61,14 +61,15 @@ const Hero = () => {
         
         <div className="lg:w-[60%]  flex flex-col z-0 gap-8 ">
           <div className='flex flex-col '>
-            <h1 className='  text-2xl font-bold py-2 mb-2 ' >Soluciones Integrales de <br />Agrimensura y Topograficas </h1>
-            <h2 className='  text-md font-medium py-0  '>  para saber mas </h2>
+            <h4 className='text-[16px]'>ATC | Agrimensura</h4>
+            <h1 className='  text-2xl font-bold py-1 mb-1 ' >Soluciones Integrales de <br />Agrimensura y Topografía </h1>
+            <h2 className='  text-md font-medium py-0  '>  Brindamos confianza, calidad y ofrecemos <br/>amplia variedad de soluciones y servicios </h2>
           </div>
           <div className='flex w-full gap-8'>
             <div className=' flex items-center justify-center btn-hero bg-[#019EDD] p-4 h-[3rem]  '>
-              <a  href='#contacto' className=' icon  text-white font-semibold '>Pedir Cotizacion</a> 
+              <a  href='#contacto' className=' icon  text-white font-semibold '>Pedir cotización</a> 
             </div>
-            <button className=' border-2 border-[#019EDD] p-4 h-[3rem] flex items-center justify-center text-[#019EDD] font-semibold  '>Ver servicio</button>
+            <a href='#servicios' className=' border-2 border-[#019EDD] p-4 h-[3rem] flex items-center justify-center text-[#019EDD] font-semibold  '>Ver servicios</a>
           </div>
         </div>
 

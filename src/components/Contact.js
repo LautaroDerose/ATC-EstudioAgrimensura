@@ -29,7 +29,7 @@ function ContactForm() {
   return (
       <div className='mx-auto max-w-[1240px] flex flex-col border-b-2 pb-12 border-sky-700'>
         <div className=' h-[20%] my-4 flex items-center justify-center'>
-          <h1 className=' font-bold text-4xl text-white my-4 '>Contactenos</h1>
+          <h1 className=' font-bold text-4xl text-white my-4 '>Contáctenos</h1>
         </div>
         <div>
           <form className=' h-[20%] mx-auto my-auto md:p-0 '>
