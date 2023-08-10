@@ -27,7 +27,7 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.service_id, process.env.template_id, form.current, process.env.public_key) 
+    emailjs.sendForm(process.env.service_id, process.env.template_id, form.current, "lXmTENz6XI9YHk4z8") 
       .then((result) => {
           console.log(result.text);
       }, (error) => {
