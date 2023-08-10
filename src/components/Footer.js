@@ -6,7 +6,7 @@ import { FaPhoneSquareAlt } from 'react-icons/fa'
 import { moreServices } from '../constants/Index'
 const Footer = () => {
   return (
-    <div className='lg:h-[80vh] h-60vh w-screen bg-sky-950 flex flex-col '>
+    <div className=' pb-16 w-screen bg-sky-950 flex flex-col '>
         <div className='md:p-0 p-8'>
           <Contact />
         </div>      
