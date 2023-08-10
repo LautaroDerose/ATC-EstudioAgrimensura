@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from './Contact'
 import { HiMail } from 'react-icons/hi'
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { FaPhoneSquareAlt } from 'react-icons/fa'
 const Footer = () => {
   return (
@@ -10,33 +10,39 @@ const Footer = () => {
         <Contact />
       </div>      
       <div className=" gap-4 justify-center mt-4  mb-8 lg:mb-0">
-        <div className="max-w-[1240px] mx-auto gap-8 mt-6 lg:flex-row flex flex-col lg:items-start items-center">
+        <div className="max-w-[1240px] h-[100%] mx-auto gap-8 mt-6 lg:flex-row flex flex-col  items-center">
           <div className="md:w-1/2">
-            <div className='flex justify-end'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4020.8509589732143!2d-58.42919652358097!3d-34.58227520486341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5856aae7333%3A0x7eb0c470594d77f8!2sParaguay%204831%2C%20C1425BSU%20CABA!5e0!3m2!1ses!2sar!4v1691696943464!5m2!1ses!2sar" width="70%" height="100%"  allowfullscreen="" loading="lazy"  title='zona palermo' referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div className='flex justify-end lg:mt-8 '>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4020.8509589732143!2d-58.42919652358097!3d-34.58227520486341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5856aae7333%3A0x7eb0c470594d77f8!2sParaguay%204831%2C%20C1425BSU%20CABA!5e0!3m2!1ses!2sar!4v1691696943464!5m2!1ses!2sar" width="100%" height="100%"  allowfullscreen="" loading="lazy"  title='zona palermo' referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div className="md:w-1/2">
             <h3 className="text-[#019EDD] text-2xl font-bold mb-2">Contacto</h3>
             <ul>
-              <div className="flex gap-2 text-[#cccccc] hover:text-[#019EDD] ">
+              <div className="flex gap-2 items-center text-[#cccccc] hover:text-[#019EDD] ">
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/atcagrimensura/" className="justify-center block md:text-base text-xs mb-2  ">
                   <i><FaLinkedin className="flex justify-center items-center text-3xl"/></i>
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/atcagrimensura/" className="justify-center block md:text-base text-xs mb-2  font-bold hover:underline">linkedin.com/company/atcagrimensura</a>
               </div>         
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <span className="justify-center block text-base mb-2 text-palette1">
                   <HiMail className="flex justify-center items-center text-3xl text-[#cccccc]"/>
                 </span>
                 <span href="#" className="justify-center block text-base mb-2 text-[#cccccc] font-bold">atcagrimensura@gmail.com</span>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <span className="justify-center block text-base mb-2 text-palette1">
                   <FaPhoneSquareAlt className="flex justify-center items-center text-3xl text-[#cccccc]"/>
                 </span>
-                <span href="#" className="justify-center block text-base mb-2 text-[#cccccc] font-bold">011 31929640</span>
+                <span href="#" className="justify-center block text-base mb-2 text-[#cccccc] font-bold">+549 11 31929640</span>
               </div>
+              <div className="flex gap-2 items-center text-[#cccccc] hover:text-[#019EDD] ">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/atcagrimensura/?igshid=NjIwNzIyMDk2Mg%3D%3D" className="justify-center block md:text-base text-xs mb-2  ">
+                  <i><FaInstagram className="flex justify-center items-center text-3xl"/></i>
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/atcagrimensura/?igshid=NjIwNzIyMDk2Mg%3D%3D" className="justify-center block md:text-base text-xs mb-2  font-bold hover:underline">@atcagrimensura</a>
+              </div>         
             </ul>
           </div>
         </div>

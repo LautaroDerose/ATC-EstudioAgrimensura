@@ -11,7 +11,9 @@ import Swal from 'sweetalert2';
       title: '<strong>Gracias!</strong>',
       icon: 'success',
       html:
-      'Estamos en contacto,<br/> a la brevedad respondere su consulta. </br> ' ,
+      'Estamos en contacto,<br/> a la brevedad respondere su consulta. </br></br> ' +
+      'Te invito a seguirme en ' +
+      '<a href="https://www.instagram.com/atcagrimensura/?igshid=NjIwNzIyMDk2Mg%3D%3D" style="color:#019EDD; text-decoration: underline;">Instagram</a><br/> ',
       focusConfirm: false,
       confirmButtonText:
         '<i class="fa fa-thumbs-up"></i> Ok!',
@@ -87,7 +89,7 @@ function ContactForm() {
   return (
     <div className='mx-auto max-w-[1240px] flex flex-col border-b-2 pb-12 border-sky-700'>
       <div className=' h-[20%] my-4 flex items-center justify-center'>
-        <h1 className=' font-bold text-4xl text-white my-4 '>Contáctenos</h1>
+        <h1 className=' font-bold text-4xl text-white my-4 '>Contáctenos</h1>;
       </div>
       <div>
         {isFormSubmitted ? (
@@ -103,7 +105,7 @@ function ContactForm() {
                   id='name'
                   type='text'
                   name='user_name'
-                  placeholder='Ingrese su Nombre'
+                  placeholder='Ingrese su nombre'
                 />
                 <input
                   className='w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300'
@@ -126,7 +128,7 @@ function ContactForm() {
                   className='w-full min-h-[100px] h-full p-2 rounded-lg text-md text-slate-800 bg-sky-200 resize-none outline-none hover:-translate-y-1 focus:shadow-md duration-300'
                   id='message'
                   name='message'
-                  placeholder='¿Cual es su consulta?'
+                  placeholder='¿Cuál es su consulta?'
                 />
               </div>
               <input
@@ -150,7 +152,7 @@ function ContactForm() {
                   id='name'
                   type='text'
                   name='user_name'
-                  placeholder='Ingrese su Nombre'
+                  placeholder='Ingrese su nombre'
                 />
                 <input
                   className='w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300'
@@ -175,7 +177,7 @@ function ContactForm() {
                   className='w-full min-h-[100px] h-full p-2 rounded-lg text-md text-slate-800 bg-sky-200 resize-none outline-none hover:-translate-y-1 focus:shadow-md duration-300'
                   id='message'
                   name='message'
-                  placeholder='¿Cual es su consulta?'
+                  placeholder='¿Cuál es su consulta?'
                 />
               </div>
               <input

@@ -13,8 +13,10 @@ const About = () => {
             <div className='w-[70%] mx-auto m-4 '><img src="logo1.png" alt="" /></div>
             <div><p className='text-sm m-4 text-center mx-auto '>ATC es un estudio de agrimensura y topografía que presta servicios tanto en la Ciudad Autónoma de Buenos Aires como en la Provincia de Buenos Aires, creado por joven profesional formado en la Universidad Nacional de La Plata y con experiencia en el desarrollo de la actividad profesional en forma independiente durante el transcurso de sus estudios.</p></div>
             <div className="mt-2 flex flex-col items-center">
-              <h2 className='text-lg font-semibold text-sky-950'>Antonio Fernandez Arias</h2>
-              <h1 className='text-lg font-bold text-[#032433]'>Ing. Agrimensor</h1>
+              <h2 className='text-lg font-bold text-[#032433]'>Antonio Fernández Arias</h2>
+              <h1 className=' text-lg font-semibold text-sky-950 mb-2'>Ing. Agrimensor</h1>
+              <h3 className=' text-sm font-semibold text-sky-950'>Mat. CPAJN y CABA N°3.621</h3>
+              <h3 className=' text-sm font-semibold text-sky-950'>Mat. CPAPBA N°2.892</h3>
             </div>
           </div>
 

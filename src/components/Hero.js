@@ -10,8 +10,8 @@ const Hero = () => {
         <div className="lg:w-[60%]  flex flex-col z-0 gap-8 ">
           <div className='flex flex-col '>
             <h4 className='text-[16px]'>ATC | Agrimensura</h4>
-            <h1 className='  text-2xl font-bold py-1 mb-1 ' >Soluciones Integrales de <br />Agrimensura y Topografía </h1>
-            <h2 className='  text-md font-medium py-0  '>  Brindamos confianza, calidad y ofrecemos <br/>amplia variedad de soluciones y servicios </h2>
+            <h1 className='  text-2xl font-bold py-1 mb-1 ' >Soluciones integrales de <br />agrimensura y topografía </h1>
+            <h2 className='  text-sm font-medium py-0  '>  Buscamos tu mejor solución a través de nuestros servicios, <br/>con calidad, compromiso y seguridad como estandartes. </h2>
           </div>
           <div className='flex w-full gap-8'>
             <div className=' flex items-center justify-center p-4 h-[3rem] btn-hero bg-[#019EDD] text-white hover:text-[#032433] hover:-translate-y-1 duration-300'>
