@@ -91,23 +91,19 @@ export const moreServices = [
 
 
 export const navLinks = [
+   
     {
         id:1,
-        label:"Home",
-        toLink:"/"
-    },
-    {
-        id:2,
         label:"Servicios",
         toLink:"/#servicios"
     },
     {
-        id:3,
+        id:2,
         label:"Nosotros",
         toLink:"/#nosotros"      
     },
     {
-        id:4,
+        id:3,
         label:"Contacto",
         toLink:"/#contacto"
     },
