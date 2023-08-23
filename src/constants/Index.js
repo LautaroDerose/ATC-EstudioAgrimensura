@@ -44,7 +44,7 @@ export const moreServices = [
   },
   {
       id:'service-7',
-      title:"Mensuras para proyecto de obra.",
+      title:"Mensuras para proyecto de obra",
       toLink:"mensura-para-proyecto-de-obra",
       imgUrl: '/sliderImage_3.jpg',
       description:"Delimitación de inmuebles en base a los hechos físicos y las causas jurídicas que los originan, con el fin de informar al proyectista las medidas lineales y superficiales del bien del que dispone.", 
