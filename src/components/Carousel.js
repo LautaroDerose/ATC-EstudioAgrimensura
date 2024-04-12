@@ -138,14 +138,14 @@
 
 // export default Carousel
 
-import React from 'react'
-const slides = [
-  'slider/picada_1.jpg',
-  'slider/picada_2.jpg',
-  'slider/picada_3.jpg',
-  'slider/picada_4.jpg',
-  'slider/topo.jpg',
-]
+// import React from 'react'
+// const slides = [
+//   'slider/picada_1.jpg',
+//   'slider/picada_2.jpg',
+//   'slider/picada_3.jpg',
+//   'slider/picada_4.jpg',
+//   'slider/topo.jpg',
+// ]
 
 // const styles = {
 //   carousel:{
@@ -159,31 +159,31 @@ const slides = [
 //     scrollbar-width:none
 //   }
 // }
-const styles = {
-  carousel: {
-    display: "grid",
-    gridAutoFlow: "column",
-    scrollBehavior: "auto",
-    gap: "1.2rem",
-    overflowY: "auto",
-    overscrollBehaviorX: "contain",
-    scrollSnapType: "x mandatory",
-    scrollbarWidth: "none"
-  }
-};
-const Carousel = () => {
-  return (
-    <div  className={styles.carousel} >
-      <div>
-        <img src='slider/picada_1.jpg' alt="" />
-        <img src='slider/picada_2.jpg' alt="" />
-        <img src='slider/picada_3.jpg' alt="" />
-        <img src='slider/picada_4.jpg' alt="" />
-        <img src='slider/topo.jpg' alt="" />
-      </div>
-    </div>
-  )
-}
+// const styles = {
+//   carousel: {
+//     display: "grid",
+//     gridAutoFlow: "column",
+//     scrollBehavior: "auto",
+//     gap: "1.2rem",
+//     overflowY: "auto",
+//     overscrollBehaviorX: "contain",
+//     scrollSnapType: "x mandatory",
+//     scrollbarWidth: "none"
+//   }
+// };
+// const Carousel = () => {
+//   return (
+//     <div  className={styles.carousel} >
+//       <div>
+//         <img src='slider/picada_1.jpg' alt="" />
+//         <img src='slider/picada_2.jpg' alt="" />
+//         <img src='slider/picada_3.jpg' alt="" />
+//         <img src='slider/picada_4.jpg' alt="" />
+//         <img src='slider/topo.jpg' alt="" />
+//       </div>
+//     </div>
+//   )
+// }
 
-export default Carousel
+// export default Carousel
 

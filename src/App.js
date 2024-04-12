@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Body />} />
 
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }

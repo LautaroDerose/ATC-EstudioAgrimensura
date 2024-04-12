@@ -1,51 +1,51 @@
-import React, {useRef, useState} from 'react';
-import emailjs  from '@emailjs/browser';
-  
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 import Swal from 'sweetalert2';
 
 
-  const SuccesAlert = () => {
-     
-    Swal.fire({
-      title: '<strong>Gracias!</strong>',
-      icon: 'success',
-      html:
+const SuccesAlert = () => {
+
+  Swal.fire({
+    title: '<strong>Gracias!</strong>',
+    icon: 'success',
+    html:
       'Estamos en contacto,<br/> a la brevedad respondere su consulta. </br></br> ' +
       'Te invito a seguirme en ' +
       '<a href="https://www.instagram.com/atcagrimensura/?igshid=NjIwNzIyMDk2Mg%3D%3D" style="color:#019EDD; text-decoration: underline;">Instagram</a><br/> ',
-      focusConfirm: false,
-      confirmButtonText:
-        '<i class="fa fa-thumbs-up"></i> Ok!',
-      confirmButtonAriaLabel: 'Thumbs up, great!'
-    })
-  }
-  const emailAlert = () => {
-     
-    Swal.fire({
-      title: '<strong>Los emails no coinciden</strong>',
-      icon: 'warning',
-      html:
-      'Por favor verifique los campos.' ,
-      focusConfirm: false,
-      confirmButtonText:
-        '<i class="fa fa-thumbs-up"></i> Ok!',
-      confirmButtonAriaLabel: 'Thumbs up, great!'
-    })
-  }
-  const formAlert = () => {
-     
-    Swal.fire({
-      title: '<strong>Error!</strong>',
-      icon: 'error',
-      html:
-      'Por favor complete todos los campos </br> ' ,
-      focusConfirm: false,
-      confirmButtonText:
-        '<i class="fa fa-thumbs-up"></i> Ok!',
-      confirmButtonAriaLabel: 'Thumbs up, great!'
-    })
-  }
+    focusConfirm: false,
+    confirmButtonText:
+      '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: 'Thumbs up, great!'
+  })
+}
+const emailAlert = () => {
+
+  Swal.fire({
+    title: '<strong>Los emails no coinciden</strong>',
+    icon: 'warning',
+    html:
+      'Por favor verifique los campos.',
+    focusConfirm: false,
+    confirmButtonText:
+      '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: 'Thumbs up, great!'
+  })
+}
+const formAlert = () => {
+
+  Swal.fire({
+    title: '<strong>Error!</strong>',
+    icon: 'error',
+    html:
+      'Por favor complete todos los campos </br> ',
+    focusConfirm: false,
+    confirmButtonText:
+      '<i class="fa fa-thumbs-up"></i> Ok!',
+    confirmButtonAriaLabel: 'Thumbs up, great!'
+  })
+}
 
 function ContactForm() {
   const form = useRef();
@@ -56,15 +56,16 @@ function ContactForm() {
     e.preventDefault();
 
     const name = form.current.user_name.value;
+    const phone = form.current.user_phone.value;
     const email = form.current.user_email.value;
     const confirmEmail = form.current.confirm_email.value;
     const message = form.current.message.value;
 
-    if (!name || !email || !confirmEmail || !message) {
+    if (!name || !phone || !email || !confirmEmail || !message) {
       formAlert()
       return;
     }
-    
+
     if (email !== confirmEmail) {
       emailAlert()
       setEmailMatch(false);
@@ -109,13 +110,20 @@ function ContactForm() {
                 />
                 <input
                   className='w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300'
+                  id='tel'
+                  type='tel'
+                  name='user_phone'
+                  placeholder='Ingrese su numero de contacto'
+                />
+                <input
+                  className='w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300'
                   id='email'
                   type='email'
                   name='user_email'
                   placeholder='Ingrese su email de contacto'
                 />
                 <input
-                  className={`w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300 ${ emailMatch ? '' : 'bg-red-500' }`}
+                  className={`w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300 ${emailMatch ? '' : 'bg-red-500'}`}
                   id='confirm_email'
                   type='email'
                   name='confirm_email'
@@ -136,7 +144,7 @@ function ContactForm() {
                 type='submit'
                 value='Enviar'
               />
-              
+
             </div>
           </form>
         ) : (
@@ -156,15 +164,21 @@ function ContactForm() {
                 />
                 <input
                   className='w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300'
+                  id='phone'
+                  type='tel'
+                  name='user_phone'
+                  placeholder='Ingrese su numero de contacto'
+                />
+                <input
+                  className='w-full my-1 p-2 rounded-lg text-md text-slate-800 bg-sky-200 outline-none hover:-translate-y-1 focus:shadow-md duration-300'
                   id='email'
                   type='email'
                   name='user_email'
                   placeholder='Ingrese su email de contacto'
                 />
                 <input
-                  className={`w-full my-1 p-2 rounded-lg text-md bg-sky-200 outline-none duration-300 ${
-                    emailMatch ? '' : 'border-red-500'
-                  }`}
+                  className={`w-full my-1 p-2 rounded-lg text-md bg-sky-200 outline-none duration-300 ${emailMatch ? '' : 'border-red-500'
+                    }`}
                   id='confirm_email'
                   type='email'
                   name='confirm_email'

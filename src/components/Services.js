@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { moreServices } from '../constants/Index'
 
 const Services = () => {
@@ -20,8 +20,8 @@ const Services = () => {
               (item, index) =>
                 index % 2 === 0 && (
                   <div className={`p-3 my-2 mx-2 shadow-md  text-slate-800 hover:text-slate-100 hover:bg-[#019EDD] cursor-pointer 
-                  ${showDescriptions[item.id] ? 'bg-[#019EDD] text-slate-100' : ''}` } 
-                  key={item.id} onClick={() => handleDescriptionClick(item.id)}>
+                  ${showDescriptions[item.id] ? 'bg-[#019EDD] text-slate-100' : ''}`}
+                    key={item.id} onClick={() => handleDescriptionClick(item.id)}>
                     <h2
                       className='font-extrabold text-[18px] border-b-2  border-[#019EDD] hover:border-[#019EDD] mb-2 px-3 py-2 uppercase cursor-pointer'
                     >
@@ -30,7 +30,7 @@ const Services = () => {
                     <div
                       className='description-container'
                       style={{
-                        display: showDescriptions[item.id] ? 'block' : 'none',  transition: 'display 0.3s ease'
+                        display: showDescriptions[item.id] ? 'block' : 'none', transition: 'display 0.3s ease'
                       }}
                     >
                       <p className='font-medium text-lg text-slate-100'>{item.description}</p>
@@ -46,19 +46,19 @@ const Services = () => {
             moreServices.map(
               (item, index) =>
                 index % 2 === 1 && (
-                <div className={`p-3  my-2 mx-2 shadow-md  text-slate-800 hover:text-slate-100 hover:bg-[#019EDD] cursor-pointer 
-                  ${showDescriptions[item.id] ? 'bg-[#019EDD] text-slate-100' : ''}` } 
-                  key={item.id} onClick={() => handleDescriptionClick(item.id)}>
+                  <div className={`p-3  my-2 mx-2 shadow-md  text-slate-800 hover:text-slate-100 hover:bg-[#019EDD] cursor-pointer 
+                  ${showDescriptions[item.id] ? 'bg-[#019EDD] text-slate-100' : ''}`}
+                    key={item.id} onClick={() => handleDescriptionClick(item.id)}>
                     <h2
                       className='font-extrabold text-[18px] border-b-2  border-[#019EDD] hover:border-[#019EDD] mb-2 px-3 py-2 uppercase cursor-pointer'
-                      
+
                     >
                       {item.title}
                     </h2>
                     <div
                       className='description-container'
                       style={{
-                        display: showDescriptions[item.id] ? 'block' : 'none',  transition: 'display 0.3s ease'
+                        display: showDescriptions[item.id] ? 'block' : 'none', transition: 'display 0.3s ease'
                       }}
                     >
                       <p className='font-medium text-lg text-slate-100'>{item.description}</p>
