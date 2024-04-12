@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
 
 
-        <div className=' fixed w-screen bg-black z-10 top-0  flex justify-between items-center h-16  mx-auto px-4 md:px-[2rem] lg:px-[15%] text-white'>
+        <nav className=' fixed w-screen bg-black z-50 top-0  flex justify-between items-center h-16  mx-auto px-4 md:px-[2rem] lg:px-[15%] text-white'>
             <a href='/' className='w-[50px] border-2 border-white hover:border-[#019EDD] rounded-full'> <img src={`${scrolled ? "logoIcon_Wcolor_transparent.png" : "logoIcon_white_transparent.png"}`} alt="" className='w-[4rem] duration-300' /></a>
             <div className='hidden md:flex'>
                 {
@@ -66,7 +66,7 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 
