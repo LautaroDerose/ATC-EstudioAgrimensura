@@ -28,20 +28,54 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.btn-arrowDown{
+/* .btn-arrowDown {
   position: relative;
+} */
+
+.btn-arrowDown {
+  position: fixed;
+  width: 2.5rem; /* Tamaño base para dispositivos pequeños */
+  height: 2.5rem; /* Tamaño base para dispositivos pequeños */
+  right: 0.5rem; /* Distancia del borde derecho */
+  bottom: 0.5rem; /* Distancia del borde inferior */
+  margin: 1rem; /* Margen general */
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.3);
+  z-index: 50;
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+@media (min-width: 768px) {
+  .btn-arrowDown {
+    width: 5rem; /* Tamaño para dispositivos medianos y grandes */
+    height: 5rem; /* Tamaño para dispositivos medianos y grandes */
+    margin: 1.25rem; /* Margen para dispositivos medianos y grandes */
+  }
+}
+
+/* Tamaño más pequeño del círculo en dispositivos pequeños */
+@media (max-width: 767px) {
+  .btn-arrowDown::before,
+  .btn-arrowDown::after {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 .btn-arrowDown::before,
-.btn-arrowDown::after{
-  content:'';
+.btn-arrowDown::after {
+  content: '';
   position: absolute;
-  width: 3rem;
-  height: 3rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border-radius: 50%;
-  background-color: #019EDD;
+  background-color: #25D366;
   opacity: 0;
-  animation: waves 1.75s infinite;
+  animation: waves 3.5s infinite; /* Duración total de la animación aumentada */
 }
 
 @media (min-width: 768px) {
@@ -52,26 +86,29 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.btn-arrowDown::before{
+.btn-arrowDown::before {
   animation-delay: 1s;
 }
-.btn-arrowDown::before{
-  animation-delay: 1.3s;
+
+.btn-arrowDown::after {
+  animation-delay: 2s; /* Intervalo más distante */
 }
 
-.btn-arrowDown .icon{
-  position: relative;
-  z-index: 2;
+.btn-arrowDown:hover {
+  transform: translateY(-0.5rem); /* Desplazamiento hacia arriba al hacer hover */
 }
 
 @keyframes waves {
   0% {
     transform: scale(1);
   }
-  15%{
+  10% {
     opacity: 1;
   }
-  100%{
+  50% {
+    opacity: 0.5; /* Intervalos de tiempo más distantes */
+  }
+  100% {
     transform: scale(1.5);
     opacity: 0;
   }

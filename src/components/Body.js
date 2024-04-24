@@ -2,6 +2,7 @@ import React from 'react'
 import About from './About';
 import Hero from './Hero';
 import Services from './Services';
+import WtspButton from './WtspButton';
 
 
 const Body = () => {
@@ -9,6 +10,7 @@ const Body = () => {
   return (
     <>
       <main>
+        <WtspButton />
         <div className="" >     
           <Hero />
         </div>
